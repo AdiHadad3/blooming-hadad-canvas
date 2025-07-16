@@ -55,7 +55,7 @@ const ImageShowcase = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/30">
+    <section className="py-8 px-4 bg-gradient-to-b from-background to-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-primary mb-6 text-shadow-elegant">
@@ -67,14 +67,14 @@ const ImageShowcase = () => {
             <div className="h-px bg-secondary w-20"></div>
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-4">
-            A Family-Owned Business Committed to Beauty, Quality, and Heartfelt Service
+            30 years of a Family-Owned Business that Committed to Beauty, Quality, and Heartfelt Service
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            In our place, craftsmanship meets care. We treat every bouquet as if it's made for our own family - because it is.
+            In our place, craftsmanship meets care. <br /> We treat every bouquet as if it's made for our own family - because it is.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[280px] sm:auto-rows-[250px] md:auto-rows-[220px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[280px] sm:auto-rows-[250px] md:auto-rows-[220px]">
           {images.map((image, index) => (
             <div 
               key={index}
