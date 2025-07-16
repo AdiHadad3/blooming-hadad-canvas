@@ -20,7 +20,7 @@ const ContactSection = () => {
         </div>
 
         <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Ready to bring the beauty of HADAD's handcrafted gypsophila to your special moments? 
+          Ready to bring the beauty of HADAD's handcrafted gypsophila to your sales business? 
           We're here to help you create something extraordinary.
         </p>
 

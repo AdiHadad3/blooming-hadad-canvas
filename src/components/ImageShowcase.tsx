@@ -74,7 +74,7 @@ const ImageShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[280px] sm:auto-rows-[250px] md:auto-rows-[220px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 auto-rows-[280px] sm:auto-rows-[250px] md:auto-rows-[220px]">
           {images.map((image, index) => (
             <div 
               key={index}

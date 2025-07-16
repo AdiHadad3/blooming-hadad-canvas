@@ -23,11 +23,9 @@ const Footer = () => {
 
           {/* Copyright and establishment */}
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-8 text-sm text-white/70">
-            <div>© HADAD 1992 - {new Date().getFullYear()}</div>
+            <div>© HADAD 1992</div>
             <div className="hidden sm:block">•</div>
             <div>Every Petals in Perfect Bloom</div>
-            <div className="hidden sm:block">•</div>
-            <div>Handcrafted since 1992</div>
           </div>
 
           {/* Final decorative element */}

@@ -15,7 +15,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-[60vh] bg-background flex flex-col items-center justify-center px-4 relative overflow-hidden pt-8">
+    <section className="min-h-[60vh] bg-background flex flex-col items-center justify-center px-4 relative overflow-hidden pt-4">
       <div className="text-center max-w-4xl mx-auto z-10">
         {/* Logo */}
         <div className="animate-on-load opacity-0">
