@@ -16,12 +16,6 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen bg-background flex flex-col items-center justify-center px-4 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-secondary animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-floral-pink animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full bg-floral-blue animate-float" style={{animationDelay: '4s'}}></div>
-      </div>
 
       <div className="text-center max-w-4xl mx-auto z-10">
         {/* Logo */}
@@ -33,25 +27,21 @@ const HeroSection = () => {
           />
         </div>
 
-        {/* Main tagline */}
+        {/* Main title */}
         <div className="animate-on-load opacity-0 mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-primary text-shadow-elegant mb-4">
             HADAD
           </h1>
-          <div className="flex items-center justify-center mb-6">
-            <div className="h-px bg-secondary w-16 mr-4"></div>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide">
-              EVERY PETALS IN PERFECT BLOOM
-            </p>
-            <div className="h-px bg-secondary w-16 ml-4"></div>
-          </div>
         </div>
 
-        {/* Established badge */}
+        {/* Established section */}
         <div className="animate-on-load opacity-0">
-          <div className="inline-block bg-accent/20 backdrop-blur-sm border border-accent rounded-full px-8 py-3">
-            <p className="text-primary font-medium">
-              Est. 1992 – Over 30 Years of Timeless Floral Art
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+              Over 30 Years of Growing Flowers with Heart
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Three decades of passion, dedication, and blooming excellence - cultivated with care and rooted in love.
             </p>
           </div>
         </div>

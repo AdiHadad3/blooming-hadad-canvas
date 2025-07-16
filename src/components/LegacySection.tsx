@@ -7,7 +7,7 @@ const LegacySection = () => {
         <div className="mb-8">
           <Flower2 className="w-12 h-12 text-secondary mx-auto mb-6 animate-float" />
           <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 text-shadow-elegant">
-            🌿 Rooted in Tradition – Blooming Since 1992
+            🌿 From Our Farm to Your Hands - Nature's Finest, Hand-Grown with Precision
           </h2>
         </div>
 
@@ -17,10 +17,9 @@ const LegacySection = () => {
           <div className="absolute -bottom-6 -right-6 text-6xl text-secondary/20 font-serif">"</div>
           
           <blockquote className="text-lg md:text-xl text-muted-foreground leading-relaxed italic max-w-3xl mx-auto relative z-10">
-            For over 30 years, HADAD has been cultivating beauty through vibrant, hand-dyed gypsophila. 
-            Each piece is a tribute to tradition, passion, and natural elegance. From our humble beginnings 
-            to becoming masters of floral artistry, we continue to transform nature's delicate gifts into 
-            lasting memories.
+            Nestled in a lush agricultural village, we specialize in cultivating premium gypsophila with full, radiant petals and vibrant hues.
+            Our goal? Deliver breathtaking blooms tailored to your vision — in the color, style, and quality you deserve.
+            With customizable color options and unmatched attention to detail, we're here to grow beauty that reflects your story.
           </blockquote>
         </div>
 

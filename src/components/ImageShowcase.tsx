@@ -66,12 +66,15 @@ const ImageShowcase = () => {
             <div className="w-3 h-3 bg-secondary rounded-full mx-4"></div>
             <div className="h-px bg-secondary w-20"></div>
           </div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Each gypsophila creation tells a story of dedication, tradition, and the endless beauty found in nature's smallest details.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-4">
+            A Family-Owned Business Committed to Beauty, Quality, and Heartfelt Service
+          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            In our place, craftsmanship meets care. We treat every bouquet as if it's made for our own family - because it is.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[200px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[280px] sm:auto-rows-[250px] md:auto-rows-[220px]">
           {images.map((image, index) => (
             <div 
               key={index}
