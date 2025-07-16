@@ -17,26 +17,33 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* HADAD Brand Colors */
+    --primary: 224 71% 24%; /* Deep navy */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 292 84% 61%; /* Bright purple */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 320 40% 90%; /* Soft pink */
+    --accent-foreground: 224 71% 24%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 240 20% 96%; /* Light lavender */
+    --muted-foreground: 224 30% 40%;
+
+    /* Floral palette */
+    --floral-pink: 320 60% 80%;
+    --floral-blue: 200 80% 75%;
+    --floral-lavender: 270 50% 85%;
+    --floral-white: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 224 20% 90%;
+    --input: 224 20% 90%;
+    --ring: 292 84% 61%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +108,77 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Custom animations for HADAD */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes parallax {
+    to {
+      transform: translateY(-50px);
+    }
+  }
+}
+
+@layer components {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.6s ease-out forwards;
+  }
+
+  .animate-parallax {
+    animation: parallax 20s linear infinite;
+  }
+
+  .gradient-floral {
+    background: linear-gradient(135deg, 
+      hsl(var(--floral-pink)) 0%, 
+      hsl(var(--floral-lavender)) 50%, 
+      hsl(var(--floral-blue)) 100%);
+  }
+
+  .text-shadow-elegant {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
   }
 }
